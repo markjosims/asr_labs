@@ -17,7 +17,7 @@ At the start of first lab, you need to set up your Python environment.  This can
 Here are the commands for setting up the environment.  These commands have been tested on DICE, but work in most other computing environments (with possible minor changes)
 
 ```shell
-git clone https://github.com/ZhaoZeyu1995/asr_labs.git
+git clone https://github.com/yiwang454/asr_labs.git
 cd asr_labs
 source /opt/conda/etc/profile.d/conda.sh
 conda create -n asr_env python=3.7
@@ -78,7 +78,7 @@ git stash pop
 which will update your local version to the one on Github and then merge the changes you made. 
 You can view all the changes we made and the new files we uploaded to the repository on your machine now.  If you continue to receive warning or error messages at this stage, please seek the advice of a lab demonstrator.
 
-**NOTE: If you are not familiar with Git is safest to create a backup copy of all your files before doing this.**
+**NOTE: If you are not familiar with Git, it is safer to create a backup copy of all your files before doing this.**
 
 ****
 
