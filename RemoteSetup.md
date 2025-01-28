@@ -35,7 +35,7 @@ If the token is not working, `jupyter notebook password` lets you set a password
 6.  Run `ssh student.compute`
 7.  Run the [commands for setting up the environment](README.md#commands-for-setting-up-the-python-environment)
 
-From now on, every time you log in, you only need to run the following commands. However, as far as we know, the command `source /opt/conda/etc/profile.d/conda.sh` no longer works on `student.login`, `student.compute` or similar remote DICE machines this year. Unless you are willing to install Anaconda yourself in your account, we recommend not to use Informatics VPN.
+From now on, every time you log in, you only need to run the following commands. 
 
 ```shell
 source /opt/conda/etc/profile.d/conda.sh
@@ -44,7 +44,8 @@ conda activate asr_env
 jupyter notebook --no-browser --ip=*
 ```
 
-**NOTE: there is a `--no-browser` added in the last command.**
+**However, as far as we know, the command `source /opt/conda/etc/profile.d/conda.sh` no longer works on `student.login`, `student.compute`, or similar remote DICE machines this year.** Unless you are willing to install Anaconda yourself in your account, we recommend not using Informatics VPN.
+
 
 ## Run Jupyter on your own PC or Mac (not recommended)
 
