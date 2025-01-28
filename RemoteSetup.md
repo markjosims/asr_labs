@@ -25,7 +25,7 @@ jupyter notebook --ip=*
 
 If the token is not working, `jupyter notebook password` lets you set a password.
 
-## Informatics VPN
+## Informatics VPN (strongly not recommended)
 
 1.  Set up the [informatics VPN](https://computing.help.inf.ed.ac.uk/openvpn) 
 2.  Connect to the VPN
@@ -35,7 +35,7 @@ If the token is not working, `jupyter notebook password` lets you set a password
 6.  Run `ssh student.compute`
 7.  Run the [commands for setting up the environment](README.md#commands-for-setting-up-the-python-environment)
 
-From now on, every time you log in, you only need to run the following commands
+From now on, every time you log in, you only need to run the following commands. However, as far as we know, the command `source /opt/conda/etc/profile.d/conda.sh` no longer works on `student.login`, `student.compute` or similar remote DICE machines this year. Unless you are willing to install Anaconda yourself in your account, we recommend not to use Informatics VPN.
 
 ```shell
 source /opt/conda/etc/profile.d/conda.sh
@@ -46,7 +46,7 @@ jupyter notebook --no-browser --ip=*
 
 **NOTE: there is a `--no-browser` added in the last command.**
 
-## Run Jupyter on your own PC or Mac (NOT RECOMMENDED)
+## Run Jupyter on your own PC or Mac (not recommended)
 
 Before this, you might need to check if [openfst](https://www.openfst.org/twiki/bin/view/FST/WebHome) and [openfst-python](https://pypi.org/project/openfst-python/) are compatible with your operating system. 
 Please make sure of this before you do the following.
