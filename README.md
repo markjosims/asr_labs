@@ -120,6 +120,13 @@ Although it's not recommended until you have become familiar with the working en
 In this case, please do not install Anaconda in your home directory, which will eat up a lot of disk space. You may try the command below to use conda.
 ```
 source /group/teaching/asr/labs/conda_install/miniconda/etc/profile.d/conda.sh 
+conda create --prefix=./asr_env python=3.7
+conda activate ./asr_env
+pip install openfst-python jupyter 
 ```
-After that, you can install your own conda environment in the home directory with the normal commands, if quota permits
+And every time afterwards you'll have to activate this environment by 
+```
+cd asr_labs
+conda activate ./asr_env
+```
 
