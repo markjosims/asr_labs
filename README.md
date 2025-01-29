@@ -47,12 +47,12 @@ After running the last command, the default browser will be opened automatically
 
 ### Addressing Disk Quota Issue
 
-If you meet space quota issues, you can check how much free storage space can be used on your DICE account by the command below:
+If you meet space quota issues, you can check how much free storage space can be used on your DICE account by the command below.
 ```
 fs lq -human
 ```
 Storing an environment for the ASR course and asr_lab codes may require approximately 530M in your home directory. If your disk free space is less than that, there are a few solutions among which you may take one:
-1), Delete some files in your home directory to free up space.
+1), Delete some files in your home directory to free up space. Useful commands can be found in [DICE quotas page](https://computing.help.inf.ed.ac.uk/afs-quotas).
 
 2), Use the conda environment stored in the ASR course shared space. Instead of using the commands suggested as above, you can try the followings:
 ```
