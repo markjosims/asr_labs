@@ -1,4 +1,4 @@
-import openfst_python as fst
+import pynini
 
 def parse_lexicon(lex_file):
     """
@@ -28,14 +28,14 @@ def generate_symbol_tables(lexicon, n=3):
         n (int): number of states for each phone HMM
         
     Returns:
-        word_table (fst.SymbolTable): table of words
-        phone_table (fst.SymbolTable): table of phones
-        state_table (fst.SymbolTable): table of HMM phone-state IDs
+        word_table (pynini.SymbolTable): table of words
+        phone_table (pynini.SymbolTable): table of phones
+        state_table (pynini.SymbolTable): table of HMM phone-state IDs
     '''
     
-    state_table = fst.SymbolTable()
-    phone_table = fst.SymbolTable()
-    word_table = fst.SymbolTable()
+    state_table = pynini.SymbolTable()
+    phone_table = pynini.SymbolTable()
+    word_table = pynini.SymbolTable()
     
     # add empty <eps> symbol to all tables
     state_table.add_symbol('<eps>')
